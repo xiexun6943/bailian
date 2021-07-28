@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jxmpp:jxmpp-jid:0.6.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../D/ruanjain/Eclipse/rep/org/jxmpp/jxmpp-jid/0.6.3/jxmpp-jid-0.6.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../D/ruanjain/Eclipse/rep/org/jxmpp/jxmpp-jid/0.6.3/jxmpp-jid-0.6.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../D/ruanjain/Eclipse/rep/org/jxmpp/jxmpp-jid/0.6.3/jxmpp-jid-0.6.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

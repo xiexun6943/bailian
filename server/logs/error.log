@@ -1,0 +1,64 @@
+===04-18 09:38:57 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter Line:42  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redissonClient in cn.xyz.aspect.RedisServiceAspect required a bean of type 'org.redisson.api.RedissonClient' that could not be found.
+	- User-defined bean method 'redissonSingle' in 'KRedisAutoConfiguration' ignored as the bean value is null
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.redisson.api.RedissonClient' in your configuration.
+
+===04-18 09:41:46 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter Line:42  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redissonClient in cn.xyz.aspect.RedisServiceAspect required a bean of type 'org.redisson.api.RedissonClient' that could not be found.
+	- User-defined bean method 'redissonSingle' in 'KRedisAutoConfiguration' ignored as the bean value is null
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.redisson.api.RedissonClient' in your configuration.
+
+===04-18 09:43:41 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter Line:42  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redissonClient in cn.xyz.aspect.RedisServiceAspect required a bean of type 'org.redisson.api.RedissonClient' that could not be found.
+	- User-defined bean method 'redissonSingle' in 'KRedisAutoConfiguration' ignored as the bean value is null
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.redisson.api.RedissonClient' in your configuration.
+
+===04-18 09:44:37 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter Line:42  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redissonClient in cn.xyz.aspect.RedisServiceAspect required a bean of type 'org.redisson.api.RedissonClient' that could not be found.
+	- User-defined bean method 'redissonSingle' in 'KRedisAutoConfiguration' ignored as the bean value is null
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.redisson.api.RedissonClient' in your configuration.
+
