@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/welcome_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+     >
+
+        <ImageView
+            android:id="@+id/welcome_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/live_backgroud3"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+
+            />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/start"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/select_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70.0dip"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/select_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:layout_weight="1"
+            android:background="@drawable/back_elipse_white_line"
+            android:padding="@dimen/padding"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/select_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:layout_weight="1"
+            android:background="@drawable/back_elipse_white_line"
+            android:padding="@dimen/padding"
+            android:text="@string/register"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

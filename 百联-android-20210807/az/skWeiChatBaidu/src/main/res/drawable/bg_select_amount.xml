@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="5dp" />
+
+            <stroke android:width="0.5dp" android:color="#c2c4c8" />
+        </shape>
+
+    </item>
+    <item  android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#dbdbde"/>
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="5dp" />
+
+            <stroke android:width="0.5dp" android:color="#c2c4c8" />
+        </shape>
+    </item>
+    <item  android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#dbdbde"/>
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="5dp" />
+
+            <stroke android:width="0.5dp" android:color="@color/main_color" />
+        </shape>
+    </item>
+
+    <item  android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#dbdbde"/>
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="5dp" />
+
+            <stroke android:width="0.5dp" android:color="@color/main_color" />
+        </shape>
+    </item>
+
+    <item  android:state_drag_hovered="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#dbdbde"/>
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="5dp" />
+
+            <stroke android:width="0.5dp" android:color="#c2c4c8" />
+        </shape>
+    </item>
+    <item  android:state_drag_hovered="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="5dp" />
+
+            <stroke android:width="0.5dp" android:color="#c2c4c8" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fanjun:keeplive:1.1.10@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26887ab42dd9c8f3a62c4a6f0d93a96b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26887ab42dd9c8f3a62c4a6f0d93a96b/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/57efa15853af589e9c53d1b69ba4426d/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/57efa15853af589e9c53d1b69ba4426d/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/57efa15853af589e9c53d1b69ba4426d/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fanjun/keeplive/1.1.10/97ffbb6763313d17983b99f498dd7c4ee81c523e/keeplive-1.1.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fanjun/keeplive/1.1.10/63b903d9489c208d9875ed8264506feecf2a528c/keeplive-1.1.10-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.fanjun/keeplive/1.1.10/63b903d9489c208d9875ed8264506feecf2a528c/keeplive-1.1.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

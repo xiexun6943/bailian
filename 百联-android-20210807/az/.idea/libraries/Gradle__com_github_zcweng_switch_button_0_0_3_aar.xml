@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zcweng:switch-button:0.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efde1a8ececf12314495f4b215de5881/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/efde1a8ececf12314495f4b215de5881/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/fe1ec41f46bb2c4b1b357f987d52d221/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/fe1ec41f46bb2c4b1b357f987d52d221/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/fe1ec41f46bb2c4b1b357f987d52d221/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zcweng/switch-button/0.0.3/be654fb3fe0283bd3d7ca559b3a8470a6e7b5459/switch-button-0.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zcweng/switch-button/0.0.3/d5d9516de797694335817ebe65abf1a5649079a2/switch-button-0.0.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.github.zcweng/switch-button/0.0.3/d5d9516de797694335817ebe65abf1a5649079a2/switch-button-0.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

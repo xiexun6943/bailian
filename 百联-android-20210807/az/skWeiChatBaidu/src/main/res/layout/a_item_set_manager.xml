@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector_background_ripple"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <com.ydd.zhichat.view.CircleImageView
+            android:id="@+id/set_manager_iv"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/avatar_normal" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/roles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/set_manager_iv"
+            android:background="@drawable/bg_role1"
+            android:padding="2dp"
+            android:text="@string/group_owner"
+            android:textColor="@color/app_white"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/set_manager_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/roles"
+            android:text="121212121"
+            android:textSize="@dimen/me_title_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee" />
+
+</LinearLayout>

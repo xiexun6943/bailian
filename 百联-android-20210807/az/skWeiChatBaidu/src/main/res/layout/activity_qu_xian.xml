@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/normal_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_selectCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:paddingRight="24dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            style="@style/IMTbleLine_TextName"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:text="选择提现方式" />
+
+        <TextView
+            android:id="@+id/tv_bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@+id/img_select"
+            android:text=""
+            android:textColor="@color/gray"/>
+
+        <ImageView
+            android:id="@+id/img_select"
+            style="@style/IMTbleLine_ArrowImg.Me"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/me_chevron_right"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_me_card"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/withdrawal_amount"
+            android:textSize="@dimen/one_level_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="￥"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/tixianmoney"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:maxLength="11"
+            android:textColor="@color/app_black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零钱余额："
+                android:textSize="@dimen/one_level_title"/>
+
+            <TextView
+                android:id="@+id/blance_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/app_black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tixianall"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/all_withdrawals"
+                android:textColor="@color/button_text"
+                android:textSize="@dimen/one_level_title"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tixian"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/weixin_text_yuanjiao_no"
+            android:gravity="center"
+            android:text="@string/withdraw_wechat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/one_level_title"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/withdraw_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/weixin_text_yuanjiao_no"
+            android:gravity="center"
+            android:text="@string/withdraw_alipay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/one_level_title"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/withdraw_defult"
+            android:layout_width="match_parent"
+            style="@style/BossGreenBtn"
+            android:gravity="center"
+            android:text="确认提现"
+            android:textColor="@color/white"
+            android:textSize="@dimen/one_level_title"/>
+
+        <TextView
+            android:id="@+id/tv_tipRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tip_withdraw_cost"
+            android:textSize="@dimen/sp_14_text_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

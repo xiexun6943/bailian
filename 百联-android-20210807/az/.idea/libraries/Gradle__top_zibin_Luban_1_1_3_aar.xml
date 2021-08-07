@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: top.zibin:Luban:1.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2818a24a8b5c714131b0b733bce3ba6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2818a24a8b5c714131b0b733bce3ba6/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/6953f17e8e806242369f828d9e9c348c/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/6953f17e8e806242369f828d9e9c348c/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/6953f17e8e806242369f828d9e9c348c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/top.zibin/Luban/1.1.3/2ef0eef966f15b31e5066b5e44124ca665310b54/Luban-1.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/top.zibin/Luban/1.1.3/b73d8ce04d26bfbe66b6b8e62f727aad4dcdbc59/Luban-1.1.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/top.zibin/Luban/1.1.3/b73d8ce04d26bfbe66b6b8e62f727aad4dcdbc59/Luban-1.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

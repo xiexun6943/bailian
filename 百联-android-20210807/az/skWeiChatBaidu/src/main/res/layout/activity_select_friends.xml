@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/search_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/app_white"
+                    android:gravity="center_vertical">
+
+                    <com.ydd.zhichat.view.ClearEditText
+                        android:id="@+id/search_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/et_search_bg"
+                        android:drawableLeft="@drawable/search"
+                        android:drawableRight="@drawable/search_clear"
+                        android:drawablePadding="9dp"
+                        android:hint="@string/search"
+                        android:paddingLeft="9dp"
+                        android:textColor="@color/dark_grey"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/message_search_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/pop_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9dp"
+                        android:text="@string/hint_selec_tag"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/one_level_title" />
+
+                    <TextView
+                        android:id="@+id/label_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/Grey_400"
+                        android:textSize="@dimen/one_level_title"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/pop_line" />
+
+                <ListView
+                    android:id="@+id/select_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <com.ydd.zhichat.sortlist.SideBar
+                android:id="@+id/sidebar"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_slide_selected"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30.0dip"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/pop_line" />
+
+    <TextView
+        android:id="@+id/next_tv"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/Grey_100"
+        android:gravity="center"
+        android:text="@string/next_step"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/one_level_title" />
+
+</LinearLayout>

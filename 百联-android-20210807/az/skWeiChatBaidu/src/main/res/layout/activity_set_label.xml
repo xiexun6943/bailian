@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/normal_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar"/>
+
+    <GridView
+        android:id="@+id/belong_label_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:numColumns="5"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/Grey_400"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="@string/input_tag"
+            android:paddingLeft="9dp"
+            android:textCursorDrawable="@color/app_skin_green"
+            android:textSize="@dimen/sp_14_text_size"/>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Grey_400"/>
+
+        <TextView
+            android:id="@+id/sure_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="@string/sure"
+            android:textColor="@color/app_skin_green"
+            android:textSize="@dimen/sp_14_text_size"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/search_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/Grey_300"
+            android:dividerHeight="0.1dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/all_label_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="@string/all_tag"
+                android:textColor="@color/Grey_600"
+                android:textSize="@dimen/SmallerTextSize"/>
+
+            <GridView
+                android:id="@+id/all_label_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:numColumns="5"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

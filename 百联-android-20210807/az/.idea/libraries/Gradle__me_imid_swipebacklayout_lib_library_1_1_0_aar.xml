@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: me.imid.swipebacklayout.lib:library:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e60a20c261a5fc7cf6361a5a535a1642/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e60a20c261a5fc7cf6361a5a535a1642/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/d794c17e1aaf0c434ff446a296162cb0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/d794c17e1aaf0c434ff446a296162cb0/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/d794c17e1aaf0c434ff446a296162cb0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.imid.swipebacklayout.lib/library/1.1.0/b40b328559b458438980f8d73643d8827480a91a/library-1.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/me.imid.swipebacklayout.lib/library/1.1.0/b40b328559b458438980f8d73643d8827480a91a/library-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

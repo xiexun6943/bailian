@@ -1,0 +1,39 @@
+<com.ydd.zhichat.view.SquareCenterFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:layout_width="70dp"
+                                                 android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_add_item_default_bg"/>
+
+    <FrameLayout
+        android:id="@+id/float_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/circle_add_float_view_bg">
+
+        <ImageView
+            android:id="@+id/icon_image_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/add_something_size"/>
+
+    </FrameLayout>
+
+</com.ydd.zhichat.view.SquareCenterFrameLayout>

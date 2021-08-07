@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion compile_version
+
+    defaultConfig {
+        minSdkVersion min_version
+        targetSdkVersion target_version
+        consumerProguardFiles 'proguard-rules.txt'
+    }
+
+    resourcePrefix 'support_recycler'
+}
+
+dependencies {
+    api 'com.android.support:recyclerview-v7:' + support_version
+}

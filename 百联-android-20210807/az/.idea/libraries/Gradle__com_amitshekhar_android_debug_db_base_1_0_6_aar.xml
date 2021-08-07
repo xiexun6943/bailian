@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amitshekhar.android:debug-db-base:1.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/165df3029316315837fc1f3c3f762f94/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/165df3029316315837fc1f3c3f762f94/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/ec12d15111fbd83b74da6e980fc6a425/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/ec12d15111fbd83b74da6e980fc6a425/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/ec12d15111fbd83b74da6e980fc6a425/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/debug-db-base/1.0.6/43c6abb777258b8e02b7a4f4aef44f5996ddf30f/debug-db-base-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/debug-db-base/1.0.6/827f4dfda522bcf259f7bea40896a9cc9427d5b1/debug-db-base-1.0.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/debug-db-base/1.0.6/827f4dfda522bcf259f7bea40896a9cc9427d5b1/debug-db-base-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

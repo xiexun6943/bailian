@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/az.iml" filepath="$PROJECT_DIR$/az.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenGLlibrary/az.OpenGLlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenGLlibrary/az.OpenGLlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YZxing-lib/az.YZxing-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/YZxing-lib/az.YZxing-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jcvideoplayer-lib/az.jcvideoplayer-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/jcvideoplayer-lib/az.jcvideoplayer-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pullToRefershLibraryMy/az.pullToRefershLibraryMy.iml" filepath="$PROJECT_DIR$/.idea/modules/pullToRefershLibraryMy/az.pullToRefershLibraryMy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/skWeiChatBaidu/az.skWeiChatBaidu.iml" filepath="$PROJECT_DIR$/.idea/modules/skWeiChatBaidu/az.skWeiChatBaidu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swiperecyclerview/az.swiperecyclerview.iml" filepath="$PROJECT_DIR$/.idea/modules/swiperecyclerview/az.swiperecyclerview.iml" />
+    </modules>
+  </component>
+</project>

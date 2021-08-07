@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tips_not_wifi">您當前正在使用移動網絡，繼續播放將消耗流量</string>
+    <string name="tips_not_wifi_confirm">繼續播放</string>
+    <string name="tips_not_wifi_cancel">停止播放</string>
+    <string name="no_url">播放地址無效</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/list_selector_background_ripple"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="56dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <com.ydd.zhichat.view.CircleImageView
+        android:id="@+id/avatar_img"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/avatar_normal" />
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/action_ll"
+        android:layout_toRightOf="@id/avatar_img"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nick_name_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/new_friend_nick_size" />
+
+        <TextView
+            android:id="@+id/des_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/new_friend_content_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="5dp">
+
+        <Button
+            android:id="@+id/action_btn_1"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/bg_btn_green_splash"
+            android:textColor="@color/white"
+            android:textSize="@dimen/two_level_content" />
+
+        <Button
+            android:id="@+id/action_btn_2"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/white_btn_bg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/two_level_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

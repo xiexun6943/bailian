@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_background_ripple"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="9dp"
+    android:paddingLeft="9dp"
+    android:paddingTop="9dp">
+
+    <com.ydd.zhichat.view.CircleImageView
+        android:id="@+id/label_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/avatar_normal" />
+
+    <TextView
+        android:id="@+id/label_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/one_level_title" />
+
+</LinearLayout>

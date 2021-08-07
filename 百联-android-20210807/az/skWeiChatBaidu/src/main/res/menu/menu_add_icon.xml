@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.ydd.zhichat.MainActivity">
+
+    <item
+        android:id="@+id/add_item"
+        android:icon="@drawable/ic_app_add"
+        android:title="@string/add"
+        app:showAsAction="always"/>
+
+</menu>

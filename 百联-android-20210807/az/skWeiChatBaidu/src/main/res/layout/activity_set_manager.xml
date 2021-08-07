@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/normal_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar"/>
+
+    <LinearLayout
+        android:id="@+id/search_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/app_white"
+        android:gravity="center_vertical">
+
+
+
+        <com.ydd.zhichat.view.ClearEditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/et_search_bg"
+            android:drawableLeft="@drawable/search"
+            android:drawableRight="@drawable/search_clear"
+            android:drawablePadding="9dp"
+            android:hint="@string/search_member"
+            android:paddingLeft="9dp"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/message_search_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"/>
+
+    <ListView
+        android:id="@+id/set_manager_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5.0dip"
+        android:layout_marginTop="9dp"
+        android:background="@color/app_white"/>
+
+</LinearLayout>

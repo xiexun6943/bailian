@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_white"
+    android:divider="@drawable/popu_message_divider"
+    android:dividerPadding="8dp"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <Button
+        android:id="@+id/btn_add_son_company"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/popmenu_shadow_bg"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:text="@string/create_company"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pop_window" />
+
+</LinearLayout>

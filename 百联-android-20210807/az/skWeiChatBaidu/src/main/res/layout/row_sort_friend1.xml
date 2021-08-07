@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/list_selector_background_ripple"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catagory_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/normal_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:minHeight="56dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/fay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/avatar_normal"
+                android:visibility="visible"
+                app:riv_corner_radius="@dimen/dp5"
+                app:riv_oval="false"
+                />
+
+            <com.ydd.zhichat.view.HeadView
+                android:id="@+id/avatar_imgS"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/fay"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nick_name_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/friend_sort_size"/>
+
+            <TextView
+                android:id="@+id/des_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/group_content_size"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+            android:background="@color/Grey_300"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

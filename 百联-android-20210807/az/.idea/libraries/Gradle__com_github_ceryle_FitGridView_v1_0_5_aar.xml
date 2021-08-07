@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ceryle:FitGridView:v1.0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1f831e0add60a63572e0187f56c93df/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1f831e0add60a63572e0187f56c93df/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/dfea6674818534313fd61da3643dc0bd/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/dfea6674818534313fd61da3643dc0bd/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/dfea6674818534313fd61da3643dc0bd/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ceryle/FitGridView/v1.0.5/eedac01cb94bf5f31a83ee91e25a50c05720522/FitGridView-v1.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ceryle/FitGridView/v1.0.5/c4b70985d13b33780015135f543ad558cb33efd7/FitGridView-v1.0.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.github.ceryle/FitGridView/v1.0.5/c4b70985d13b33780015135f543ad558cb33efd7/FitGridView-v1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

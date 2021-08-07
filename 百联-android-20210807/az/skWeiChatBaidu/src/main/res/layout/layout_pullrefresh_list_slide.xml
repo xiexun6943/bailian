@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar" />
+
+    <com.ydd.zhichat.view.PullToRefreshSlideListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/normal_bg"
+        app:ptrAnimationStyle="flip"
+        app:ptrDrawableEnd="@drawable/default_ptr_rotate"
+        app:ptrDrawableStart="@drawable/default_ptr_flip"
+        app:ptrHeaderTextColor="@color/black"
+        app:ptrMode="both"
+        app:ptrOverScroll="false"
+        app:ptrScrollingWhileRefreshingEnabled="true"
+        app:ptrShowIndicator="false"
+        app:slideMode="right"
+        app:slideRightAction="reveal" />
+
+    <Button
+        android:id="@+id/sure_btn"
+        style="@style/BossGreenBtn"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/send"
+        android:textColorHint="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

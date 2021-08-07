@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: cc.aoeiuv020:imaging:1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1a8acd991f248727de002bc592339912/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1a8acd991f248727de002bc592339912/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/0b88ffc610e63eb82ac4c0d2e0796fc0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/0b88ffc610e63eb82ac4c0d2e0796fc0/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/0b88ffc610e63eb82ac4c0d2e0796fc0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cc.aoeiuv020/imaging/1.0/3a53c13e2a45e31d52028ca1e8f509ab2a7dbe0f/imaging-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cc.aoeiuv020/imaging/1.0/dc2663c8c3342e3feec60e8a197cabec8139d7b8/imaging-1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/cc.aoeiuv020/imaging/1.0/dc2663c8c3342e3feec60e8a197cabec8139d7b8/imaging-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

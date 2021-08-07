@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hyman:flowlayout-lib:1.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd8616aa812821697cc1e7ef4b0e95ef/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd8616aa812821697cc1e7ef4b0e95ef/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/d4899e985b512e75c4f4a6bf3f3f2190/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/d4899e985b512e75c4f4a6bf3f3f2190/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/d4899e985b512e75c4f4a6bf3f3f2190/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hyman/flowlayout-lib/1.1.2/180e33c4618ebbd401d4142976ad9af0e883e676/flowlayout-lib-1.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hyman/flowlayout-lib/1.1.2/85304f03158cba26f21b5c1c37b1b56bf017e500/flowlayout-lib-1.1.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.hyman/flowlayout-lib/1.1.2/85304f03158cba26f21b5c1c37b1b56bf017e500/flowlayout-lib-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

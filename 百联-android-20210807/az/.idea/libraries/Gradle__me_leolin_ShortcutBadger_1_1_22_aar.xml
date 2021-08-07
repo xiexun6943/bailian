@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: me.leolin:ShortcutBadger:1.1.22@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30edeb3889ca6eb264d30a64f6f00990/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30edeb3889ca6eb264d30a64f6f00990/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/5552b8919357b99f75a24c21455e1e92/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/5552b8919357b99f75a24c21455e1e92/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/5552b8919357b99f75a24c21455e1e92/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.leolin/ShortcutBadger/1.1.22/8d181708c3d0b7cd93e7fbcb4467dae47603ee0b/ShortcutBadger-1.1.22-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.leolin/ShortcutBadger/1.1.22/614ef59fdccd8e121fa40ba7d454307025f8f0fe/ShortcutBadger-1.1.22-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/me.leolin/ShortcutBadger/1.1.22/614ef59fdccd8e121fa40ba7d454307025f8f0fe/ShortcutBadger-1.1.22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/normal_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="9dp"
+        android:text="@string/tag_name"
+        android:textColor="@color/Grey_600"
+        android:textSize="@dimen/NormalTextSize"/>
+
+    <EditText
+        android:id="@+id/label_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:hint="@string/hint_tag_name"
+        android:paddingLeft="9dp"
+        android:textColor="@color/Grey_400"
+        android:textSize="@dimen/title_left_text_size"/>
+
+    <TextView
+        android:id="@+id/label_user_size"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="9dp"
+        android:text="@string/example_tag_member"
+        android:textColor="@color/Grey_600"
+        android:textSize="@dimen/NormalTextSize"/>
+
+    <LinearLayout
+        android:id="@+id/add_label_user"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/person_add_green"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            android:text="@string/add_member"
+            android:textColor="@color/app_skin_green"
+            android:textSize="@dimen/title_right_text_size"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/Grey_600"/>
+
+    <com.ydd.zhichat.view.PullToRefreshSlideListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptrAnimationStyle="flip"
+        app:ptrDrawableEnd="@drawable/default_ptr_rotate"
+        app:ptrDrawableStart="@drawable/default_ptr_flip"
+        app:ptrHeaderTextColor="@color/black"
+        app:ptrMode="both"
+        app:ptrOverScroll="false"
+        app:ptrScrollingWhileRefreshingEnabled="true"
+        app:ptrShowIndicator="false"
+        app:slideMode="right"
+        app:slideRightAction="reveal"/>
+
+</LinearLayout>

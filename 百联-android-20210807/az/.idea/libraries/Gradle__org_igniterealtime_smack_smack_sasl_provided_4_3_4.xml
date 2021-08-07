@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.igniterealtime.smack:smack-sasl-provided:4.3.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/org.igniterealtime.smack/smack-sasl-provided/4.3.4/6a7f2960115c2b09c12f4a482e81d67b26049efd/smack-sasl-provided-4.3.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/org.igniterealtime.smack/smack-sasl-provided/4.3.4/bcc10c1f7069a1aa6a3b11ecb7b4183a8ede0161/smack-sasl-provided-4.3.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

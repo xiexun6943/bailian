@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./skWeiChatBaidu/libs/jpush-android-3.1.6.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/skWeiChatBaidu/libs/jpush-android-3.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

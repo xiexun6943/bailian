@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: :xjgarsdklibrary-release-9.1.0-2018-08-16:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/465dc3b28fd7f9fc7d252aea9610d687/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/465dc3b28fd7f9fc7d252aea9610d687/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/f1a2050843a25923580937bbc5dcfa10/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/f1a2050843a25923580937bbc5dcfa10/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/f1a2050843a25923580937bbc5dcfa10/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

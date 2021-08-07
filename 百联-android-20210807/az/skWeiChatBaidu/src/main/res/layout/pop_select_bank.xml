@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="请选择银行"
+        android:textColor="@color/text_black" />
+
+    <View style="@style/line_horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bank"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</LinearLayout>

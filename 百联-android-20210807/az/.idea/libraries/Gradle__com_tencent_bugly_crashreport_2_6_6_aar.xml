@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.bugly:crashreport:2.6.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/767c7d2d49257778040eebbc19cad683/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/767c7d2d49257778040eebbc19cad683/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/4fae280da6e2d358fb54272856ddc921/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/4fae280da6e2d358fb54272856ddc921/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/4fae280da6e2d358fb54272856ddc921/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.bugly/crashreport/2.6.6/748888cd56b58e2fac342022adb295d6e6b83f4a/crashreport-2.6.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.bugly/crashreport/2.6.6/748888cd56b58e2fac342022adb295d6e6b83f4a/crashreport-2.6.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.tencent.bugly/crashreport/2.6.6/748888cd56b58e2fac342022adb295d6e6b83f4a/crashreport-2.6.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

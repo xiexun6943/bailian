@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_background_ripple"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="9dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="9dp">
+
+    <com.ydd.zhichat.view.HeadView
+        android:id="@+id/notice_iv"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/im_notice" />
+
+    <TextView
+        android:id="@+id/notice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/notice_iv"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        tools:text="@string/example_name" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/notice_iv"
+        android:layout_marginLeft="44dp"
+        android:background="@color/Grey_200" />
+
+</RelativeLayout>

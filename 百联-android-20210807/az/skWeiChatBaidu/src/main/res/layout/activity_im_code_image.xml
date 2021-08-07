@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/a_view_actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/rel_content"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_circle_30_white"
+        android:layout_below="@+id/top">
+
+        <LinearLayout
+            android:id="@+id/lin_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/avatar_img_top"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:layout_marginLeft="24dp"
+                android:src="@color/dark_dark_grey"/>
+
+            <com.ydd.zhichat.view.MessageAvatar
+                android:id="@+id/avatar_imgS_top"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="24dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_qrc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_head">
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <com.ydd.zhichat.view.MessageAvatar
+                android:id="@+id/avatar_imgS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="扫一扫上面的二维码图案，加我"
+            android:textColor="@color/color_text"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:layout_below="@+id/rel_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_circle_30_white"
+            android:gravity="center"
+            android:text="保存到手机"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_btn_green_nor"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

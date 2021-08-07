@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ydd.zhichat.view.likeView.LikeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:id="@+id/like_relativeLayout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/app_black">
+
+
+    <!--视频播放器预留-->
+    <fm.jiecao.jcvideoplayer_lib.JCVideoViewbyXuan
+        android:id="@+id/xuan_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fm.jiecao.jcvideoplayer_lib.JCVideoViewbyXuan>
+
+    <!--缩略图-->
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--播放按钮-->
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_play_inco"
+        android:visibility="invisible"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!--进度条-->
+    <com.ydd.zhichat.ui.xrce.Xpreprogressbar
+        android:id="@+id/bottom_progress"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_alignParentBottom="true"/>
+
+    <!--自定义 侧边 UI-->
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--<com.client.yanchat.view.CircleImageView-->
+        <!--android:id="@+id/iv_avatar"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:src="@drawable/avatar_normal"/>-->
+
+        <RelativeLayout
+            android:layout_width="52dp"
+            android:layout_height="68dp">
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/avatar_normal"/>
+
+            <ImageView
+                android:id="@+id/iv_follow"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_follow"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <com.ydd.zhichat.view.likeView.LikeAnimationView
+            android:id="@+id/iv_likes"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/tv_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="7.7w"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_12_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_comm"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="14dp"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_comm"/>
+
+        <TextView
+            android:id="@+id/tv_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="7.7w"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_12_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="14dp"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_share"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/trill_share"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_12_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/rl_disc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/ak9">
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/iv_disc"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/avatar_normal" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--自定义 底部 UI-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="这里是名字"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="3"
+            android:text="123123"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_music_inco"/>
+
+            <com.ydd.zhichat.ui.trill.MarqueTextView
+                android:id="@+id/tv_bgname"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.ydd.zhichat.view.likeView.LikeRelativeLayout>

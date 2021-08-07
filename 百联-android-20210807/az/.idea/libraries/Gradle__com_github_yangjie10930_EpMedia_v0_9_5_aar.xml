@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.yangjie10930:EpMedia:v0.9.5@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9672f068587f12731e11db750d40571f/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/7d0ce6e7e69b59ee16517b7559829946/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9672f068587f12731e11db750d40571f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9672f068587f12731e11db750d40571f/res" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/7d0ce6e7e69b59ee16517b7559829946/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/7d0ce6e7e69b59ee16517b7559829946/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/7d0ce6e7e69b59ee16517b7559829946/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yangjie10930/EpMedia/v0.9.5/9452750e2f72e724e2c01e79293558c53fa4f7b8/EpMedia-v0.9.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.github.yangjie10930/EpMedia/v0.9.5/9452750e2f72e724e2c01e79293558c53fa4f7b8/EpMedia-v0.9.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

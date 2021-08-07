@@ -1,0 +1,524 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            <include layout="@layout/a_view_actionbar" />-->
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <com.client.yanchat.view.MergerStatus-->
+            <!--                    android:id="@+id/tool_bar"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginBottom="34dp"-->
+            <!--                    tools:background="@color/app_skin_normal">-->
+
+            <!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_height="150dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:gravity="center_horizontal">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                        <com.client.yanchat.view.SkinTextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:id="@+id/title"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:layout_marginTop="13dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:text="设置"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:textSize="18sp" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+            <!--                </com.client.yanchat.view.MergerStatus>-->
+
+            <RelativeLayout
+                android:id="@+id/info_rl"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp15">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_img"
+                        android:layout_width="99dp"
+                        android:layout_height="99dp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/avatar_img_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="centerCrop"
+                            android:src="@color/white"
+                            android:visibility="visible"
+                            app:riv_border_color="@color/white"
+                            app:riv_border_width="2dp"
+                            app:riv_corner_radius="@dimen/dp5"
+                            app:riv_oval="false" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/avatar_img"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/avatar_normal"
+                            android:visibility="visible"
+                            app:riv_border_color="@color/white"
+                            app:riv_border_width="2dp"
+                            app:riv_corner_radius="@dimen/dp5"
+                            app:riv_oval="false" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@+id/rel_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nick_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/color_33"
+                            android:textSize="20sp"
+                            tools:text="@string/example_name" />
+
+
+                        <TextView
+                            android:id="@+id/phone_number_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:textColor="@color/color_33"
+                            android:textSize="14sp"
+                            tools:text="查看或编辑个人资料" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/header_more"
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="@drawable/me_chevron_right" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toLeftOf="@+id/header_more"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_qr_code"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/IMTbleLine"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/llFriend"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@mipmap/my_friend" />
+
+                        <TextView
+                            android:id="@+id/tvFriend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            tools:text="236" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/gray"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@mipmap/my_group" />
+
+                        <TextView
+                            android:id="@+id/tvGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            tools:text="26" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/normal_bg"
+                android:divider="@drawable/me_divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    android:id="@+id/my_monry"
+                    style="@style/IMTbleLine_UP"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <com.ydd.zhichat.view.LightImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_pocket" />
+
+                    <TextView
+                        style="@style/IMTbleLine_TextName"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_purse" />
+
+                    <ImageView
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/me_chevron_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_space_rl"
+                    style="@style/IMTbleLine_UP"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <ImageView
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/me_chevron_right"
+                        android:contentDescription="@string/app_name" />
+
+                    <com.ydd.zhichat.view.LightImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/my_icon_noalbum" />
+
+                    <TextView
+                        android:id="@+id/MySky"
+                        style="@style/IMTbleLine_TextName"
+                        android:layout_centerVertical="true"
+                        android:text="我的相册" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_collection_rl"
+                    style="@style/IMTbleLine_UP"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <com.ydd.zhichat.view.LightImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/my_icon_collection" />
+
+                    <TextView
+                        android:id="@+id/my_collection_tv"
+                        style="@style/IMTbleLine_TextName"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_collection" />
+
+                    <ImageView
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/me_chevron_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/correlation_rl"
+                    style="@style/IMTbleLine"
+                    android:background="@color/white">
+
+                    <com.ydd.zhichat.view.LightImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/yuwoxiangguan" />
+
+                    <TextView
+                        android:id="@+id/correlation_tv"
+                        style="@style/IMTbleLine_TextName"
+                        android:layout_centerVertical="true"
+                        android:text="与我相关" />
+
+                    <ImageView
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/me_chevron_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/customer_rl"
+                    style="@style/IMTbleLine"
+                    android:visibility="gone"
+                    android:background="@color/white"
+                    >
+
+                    <com.ydd.zhichat.view.LightImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/kefu" />
+
+                    <TextView
+                        android:id="@+id/customer_tv"
+                        style="@style/IMTbleLine_TextName"
+                        android:layout_centerVertical="true"
+                        android:text="我的客服" />
+
+                    <ImageView
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/me_chevron_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/local_course_rl"
+                    style="@style/IMTbleLine"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <com.ydd.zhichat.view.LightImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/my_icon_web_client" />
+
+                    <TextView
+                        android:id="@+id/my_course_tv"
+                        style="@style/IMTbleLine_TextName"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_course" />
+
+                    <ImageView
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/me_chevron_right"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/meeting_rl"
+                        style="@style/IMTbleLine_UP"
+                        android:background="@color/white"
+                        android:visibility="visible">
+
+                        <com.ydd.zhichat.view.LightImageView
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/my_meeting" />
+
+                        <TextView
+                            style="@style/IMTbleLine_TextName"
+                            android:layout_centerVertical="true"
+                            android:text="@string/chat_video_conference" />
+
+                        <ImageView
+                            style="@style/IMTbleLine_ArrowImg.Me"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/me_chevron_right"
+                            android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/live_rl"
+                        style="@style/IMTbleLine_UP"
+                        android:background="@color/white"
+                        android:visibility="visible">
+
+                        <com.ydd.zhichat.view.LightImageView
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/my_live" />
+
+                        <TextView
+                            style="@style/IMTbleLine_TextName"
+                            android:layout_centerVertical="true"
+                            android:text="@string/live_demo" />
+
+                        <ImageView
+                            style="@style/IMTbleLine_ArrowImg.Me"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/me_chevron_right"
+                            android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/douyin_rl"
+                        style="@style/IMTbleLine"
+                        android:background="@color/white"
+                        android:visibility="gone">
+
+                        <com.ydd.zhichat.view.LightImageView
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/my_douyin"
+                            app:srcLight="@drawable/my_douyin_light" />
+
+                        <TextView
+                            style="@style/IMTbleLine_TextName"
+                            android:layout_centerVertical="true"
+                            android:text="@string/douyin" />
+
+                        <ImageView
+                            style="@style/IMTbleLine_ArrowImg.Me"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/me_chevron_right"
+                            android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_rl"
+                    style="@style/IMTbleLine"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white">
+
+                    <com.ydd.zhichat.view.LightImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/my_icon_setting" />
+
+                    <TextView
+                        android:id="@+id/SettingTv"
+                        style="@style/IMTbleLine_TextName"
+                        android:layout_centerVertical="true"
+                        android:text="@string/settings" />
+
+                    <ImageView
+                        style="@style/IMTbleLine_ArrowImg.Me"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/me_chevron_right"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

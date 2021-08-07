@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.igniterealtime.smack:smack-tcp:4.3.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/org.igniterealtime.smack/smack-tcp/4.3.4/2a463a215eaed5a93511a1b2e82756638b564179/smack-tcp-4.3.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/org.igniterealtime.smack/smack-tcp/4.3.4/3ab65e08b612f43a7f05cb3975663335032fc87c/smack-tcp-4.3.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_group"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/list_selector_background_ripple"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ec" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/iv_arrow"
+            android:text=""
+            android:textSize="@dimen/one_level_title" />
+
+        <LinearLayout
+            android:id="@+id/notification_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10.0dip"
+            android:layout_toRightOf="@+id/tv_group_name"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/two_level_content" />
+
+            <com.ydd.zhichat.view.MarqueeTextView
+                android:id="@+id/notification_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/two_level_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_group_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/add_more" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_personal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/list_selector_background_ripple"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.ydd.zhichat.view.CircleImageView
+            android:id="@+id/iv_inco"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:src="@drawable/avatar_normal" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/one_level_title" />
+
+            <TextView
+                android:id="@+id/tv_text_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="2dp"
+                android:text="@string/staff"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/two_level_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_group_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_more" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Grey_200" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/app_white"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="9dp">
+
+    <CheckBox
+        android:id="@+id/see_check_box"
+        style="@style/CustomCheckBoxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <com.ydd.zhichat.view.CircleImageView
+        android:id="@+id/see_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/see_check_box"/>
+
+    <TextView
+        android:id="@+id/see_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/see_avatar"
+        android:text="@string/example_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/chat_text_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Grey_400"/>
+
+</RelativeLayout>

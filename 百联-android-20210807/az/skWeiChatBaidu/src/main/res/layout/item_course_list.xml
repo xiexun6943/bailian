@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:background="@drawable/list_selector_background_ripple"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_course_name"
+            android:textSize="@dimen/NormalTextSize" />
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/tip_public_time"
+            android:textSize="@dimen/NormalTextSize" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="76dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/item_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_radio_blu"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/item_next_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/set_list_next"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

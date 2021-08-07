@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/normal_bg"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_for_live_adapter">
+
+        <!--
+                <com.client.yanchat.view.RoundView
+                    android:id="@+id/live_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_normal"
+                    app:borderRadius="12dp"
+                    app:type="round"/>
+        -->
+
+        <ImageView
+            android:id="@+id/live_default"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_normal"/>
+
+        <TextView
+            android:id="@+id/live_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/live_title_size"/>
+
+        <TextView
+            android:id="@+id/islive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/in_live"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/live_title_size"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/app_white"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/live_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/live_notice_size"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/live_notice"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/live_avatar_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/default_head"/>
+
+            <TextView
+                android:id="@+id/live_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/live_name_size"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.meizu.flyme.internet:push-internal:3.8.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/052bee824c0a0d3f2b46c9efc70df615/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/052bee824c0a0d3f2b46c9efc70df615/res" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/c2683f615cd5b5d60251beaf18cf006c/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/c2683f615cd5b5d60251beaf18cf006c/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../android_studio/.gradle/caches/transforms-2/files-2.1/c2683f615cd5b5d60251beaf18cf006c/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.meizu.flyme.internet/push-internal/3.8.1/11baa578df78b0d26e293e0a9ae7fea25d250f56/push-internal-3.8.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../android_studio/.gradle/caches/modules-2/files-2.1/com.meizu.flyme.internet/push-internal/3.8.1/11baa578df78b0d26e293e0a9ae7fea25d250f56/push-internal-3.8.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,142 @@
+<com.ydd.zhichat.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/normal_bg"
+                                        android:fitsSystemWindows="true"
+                                        android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/avatar_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar_normal" />
+
+                <RelativeLayout
+                    style="@style/IMTbleLine_UP"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/name_text"
+                        style="@style/IMTbleLine_TextKey"
+                        android:drawablePadding="5dp"
+                        android:text="@string/name_align" />
+
+                    <com.ydd.zhichat.view.ClearEditText
+                        android:id="@+id/name_edit"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toLeftOf="@+id/name_arrow_img"
+                        android:layout_toRightOf="@+id/name_text"
+                        android:background="@null"
+                        android:hint="@string/please_input_name"
+                        android:inputType="text" />
+
+                    <ImageView
+                        android:id="@+id/name_arrow_img"
+                        style="@style/IMTbleLine_ArrowImg"
+                        android:contentDescription="@string/app_name"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sex_select_rl"
+                    style="@style/IMTbleLine_UP">
+
+                    <TextView
+                        android:id="@+id/sex_text"
+                        style="@style/IMTbleLine_TextKey"
+                        android:drawablePadding="5dp"
+                        android:text="@string/sex_align" />
+
+                    <TextView
+                        android:id="@+id/sex_tv"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toLeftOf="@+id/sex_arrow_img"
+                        android:layout_toRightOf="@+id/sex_text" />
+
+                    <ImageView
+                        android:id="@+id/sex_arrow_img"
+                        style="@style/IMTbleLine_ArrowImg"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/birthday_select_rl"
+                    style="@style/IMTbleLine_UP">
+
+                    <TextView
+                        android:id="@+id/birthday_text"
+                        style="@style/IMTbleLine_TextKey"
+                        android:drawablePadding="5dp"
+                        android:text="@string/birthday" />
+
+                    <TextView
+                        android:id="@+id/birthday_tv"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toLeftOf="@+id/birthday_arrow_img"
+                        android:layout_toRightOf="@+id/birthday_text" />
+
+                    <ImageView
+                        android:id="@+id/birthday_arrow_img"
+                        style="@style/IMTbleLine_ArrowImg"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/city_select_rl"
+                    style="@style/IMTbleLine_UP">
+
+                    <TextView
+                        android:id="@+id/city_text"
+                        style="@style/IMTbleLine_TextKey"
+                        android:drawablePadding="5dp"
+                        android:text="@string/residence_align" />
+
+                    <TextView
+                        android:id="@+id/city_tv"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toLeftOf="@+id/city_arrow_img"
+                        android:layout_toRightOf="@+id/city_text" />
+
+                    <ImageView
+                        android:id="@+id/city_arrow_img"
+                        style="@style/IMTbleLine_ArrowImg"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_step_btn"
+                style="@style/BossGreenBtn"
+                android:layout_below="@+id/ls"
+                android:text="@string/sure" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</com.ydd.zhichat.view.MyLinearLayout>

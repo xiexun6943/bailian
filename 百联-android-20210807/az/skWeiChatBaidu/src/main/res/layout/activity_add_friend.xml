@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/color_f8">
+    <include layout="@layout/a_view_actionbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"/>
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_99"
+            android:text="搜索账号/手机号/ID"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/dp5"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/dp15">
+        <TextView
+            android:id="@+id/my_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的ID: 368614"
+            android:textSize="@dimen/sp_14_text_size"
+            android:textColor="@color/color_99"
+
+           />
+        <ImageView
+            android:id="@+id/qcode"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_qr_code"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_selector_background_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/mianduimian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="面对面建群"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@color/gray_d3"/>
+    <LinearLayout
+        android:id="@+id/scanning"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_selector_background_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:visibility="visible">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/new_saoyisao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="@string/scanning"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@color/gray_d3"/>
+    <LinearLayout
+        android:id="@+id/receipt_payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_selector_background_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:visibility="visible">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/jiaruheimingdan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="黑名单"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

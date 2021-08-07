@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="9dp"
+        android:paddingTop="9dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="9dp"
+        android:visibility="visible">
+
+        <com.ydd.zhichat.view.ClearEditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/et_search_bg"
+            android:clickable="false"
+            android:drawableStart="@drawable/search"
+            android:drawableLeft="@drawable/search"
+            android:drawableEnd="@drawable/search_clear"
+            android:drawableRight="@drawable/search_clear"
+            android:drawablePadding="9dp"
+            android:hint="搜索"
+            android:paddingStart="9dp"
+            android:paddingLeft="9dp"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/message_search_size"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/new_friend_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/new_friend"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/im_new_friends"
+              />
+
+            <TextView
+                android:id="@+id/num_tv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/new_friend"
+                android:layout_alignRight="@+id/new_friend"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/new_friend"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nick_name_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/new_friend"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+
+                <TextView
+                    android:id="@+id/des_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="通过新的朋友添加搜索好友"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/colleague_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/colleague_iv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/im_colleague" />
+
+            <TextView
+                android:id="@+id/num_tv_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/colleague_iv"
+                android:layout_alignRight="@+id/colleague_iv"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/colleague_iv"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/my_colleague"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="自己建立的群组合已经加入的群组"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contacts_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/contacts"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/sk_ic_pc" />
+
+            <TextView
+                android:id="@+id/num_tv_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/contacts"
+                android:layout_alignRight="@+id/contacts"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/contacts"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/phone_contact"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="可以邀请手机联系人的好友进行聊天"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notice_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/notice_number"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_notice" />
+
+            <TextView
+                android:id="@+id/num_tv_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/notice_number"
+                android:layout_alignRight="@+id/notice_number"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/notice_number"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/service_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="关注知名公众号和热门公众号"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/group"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/function_icon_join_group_apply" />
+
+            <TextView
+                android:id="@+id/num_tv_5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/group"
+                android:layout_alignRight="@+id/group"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/group"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/group"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="自己建立的群组合已经加入的群组"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/black_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/black_lv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/im_black" />
+
+            <TextView
+                android:id="@+id/num_tv_6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/black_lv"
+                android:layout_alignRight="@+id/black_lv"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/black_lv"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/black_list"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="屏蔽拉黑好友的名单管理"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/device_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+
+            <com.ydd.zhichat.view.CircleImageView
+                android:id="@+id/device_lv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/feb" />
+
+            <TextView
+                android:id="@+id/num_tv_7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/device_lv"
+                android:layout_alignRight="@+id/device_lv"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/device_lv"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/my_device"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="自己的设备管理"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/label_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:minHeight="56dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/label"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/label" />
+
+            <TextView
+                android:id="@+id/num_tv_8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/label"
+                android:layout_alignRight="@+id/label"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="2"
+                tools:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/label"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/tag"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/friend_sort_size"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="可以标记好友的分类标签"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/group_content_size"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="@dimen/friend_item_line_margin_left"
+                android:background="@color/Grey_300"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
